@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mgrdata>
+  <plugin name="pmcrystalpay.php">
+    <group>payment_method</group>
+    <msg name="desc_short" lang="ru">CrystalPAY</msg>
+    <msg name="desc_short" lang="en">CrystalPAY</msg>
+    <msg name="desc_full" lang="ru">Платежный модуль CrystalPAY.io</msg>
+    <msg name="desc_full" lang="en">CrystalPAY.io payment module</msg>
+    <msg name="price" lang="ru">Бесплатно</msg>
+    <msg name="price" lang="en">Free</msg>
+  </plugin>
+
+  <metadata name="paymethod.edit.crystalpay.php" type="form">
+    <form>
+      <page name="methodprops">
+        <field name="auth_login">
+          <input name="AUTH_LOGIN" private="no" required="yes" type="text" />
+        </field>
+        <field name="auth_secret">
+          <input name="AUTH_SECRET" private="no" required="yes" type="text" />
+        </field>
+        <field name="salt">
+          <input name="SALT" private="no" required="yes" type="text" />
+        </field>
+        <field name="lifetime">
+          <input name="LIFETIME" private="no" required="yes" type="text" check="int" checkargs="1,4320"/>
+        </field>
+      </page>
+    </form>
+  </metadata>
+
+  <lang name="en">
+    <messages name="label_paymethod">
+      <msg name="pmcrystalpay.php">CrystalPAY</msg>
+      <msg name="module_pmcrystalpay.php">CrystalPAY</msg>
+    </messages>
+
+    <messages name="paymethod.edit.crystalpay.php">
+      <msg name="auth_login">Account login</msg>
+      <msg name="hint_auth_login">It is specified when creating an account. Not to be confused with the account name!</msg>
+      <msg name="auth_secret">Secret (first key) of the account</msg>
+      <msg name="hint_auth_secret">Generated when you create an account. Keys can be reset in the account settings.</msg>
+      <msg name="salt">Salt (secondary key) of the account</msg>
+      <msg name="hint_salt">Generated when you create an account. Keys can be reset in the account settings.</msg>
+      <msg name="lifetime">Invoice life time in minutes</msg>
+      <msg name="hint_lifetime">Specifies the time within which a payment can be made.</msg>
+    </messages>
+  </lang>
+
+  <lang name="ru">
+    <messages name="label_paymethod">
+      <msg name="pmcrystalpay.php">CrystalPAY</msg>
+      <msg name="module_pmcrystalpay.php">CrystalPAY</msg>
+    </messages>
+
+    <messages name="paymethod.edit.crystalpay.php">
+      <msg name="auth_login">Логин кассы</msg>
+      <msg name="hint_auth_login">Указывается при создании кассы. Не путать с названием кассы!</msg>
+      <msg name="auth_secret">Secret (первый ключ) кассы</msg>
+      <msg name="hint_auth_secret">Выдаётся при создании кассы. Ключи можно сбросить в настройках кассы.</msg>
+      <msg name="salt">Salt (второй ключ) кассы</msg>
+      <msg name="hint_salt">Выдаётся при создании кассы. Ключи можно сбросить в настройках кассы.</msg>
+      <msg name="lifetime">Время жизни инвойса в минутах</msg>
+      <msg name="hint_lifetime">Задаёт время, в течение которого можно совершить платёж.</msg>
+    </messages>
+  </lang>
+</mgrdata>
