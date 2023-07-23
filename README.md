@@ -18,7 +18,7 @@ apt install php php-xml php-curl php-mysql php-common -y
 1. Скачайте [последнюю версию модуля](https://github.com/CrystalPAY-io/billmanager-module/releases)
 2. Откройте скачанный архив, перейдите в папку `billmanager-module-ВЕРСИЯ`
 3. Распакуйте содержимое папки из архива по пути на сервере `/usr/local/mgr5`
-4. Выполните команду `chmod 755 /usr/local/mgr5/cgi/crystalpay*` в консоли сервера, для выставления прав доступа на скрипты
+4. Выполните команду `chmod 755 /usr/local/mgr5/cgi/crystalpay*` в консоли сервера
 5. Выполните команду `chmod 755 /usr/local/mgr5/paymethods/pmcrystalpay.php` в консоли сервера
 6. Выполните команду `killall core` в консоли сервера, для перезапуска панели
 7. Перейдите в раздел настройки методов оплаты, создайте новый метод оплаты - `CrystalPAY`
